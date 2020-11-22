@@ -25,7 +25,7 @@ var generate = function ()
         while (intCount > 2)
         {
             k = i + j;
-            stringOutput = stringOutput + "" + k;
+            stringOutput = stringOutput + k + " ";
             i = j;
             j = k;
             intCount--;
