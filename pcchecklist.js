@@ -16,17 +16,17 @@ var passwordCheckOld = function ()
    if (stringPassword.length < 8) {
     alert("Your password is too short!");
    }
-   for (var stringPassword = 0; stringPassword < arrayBadPassword.length, stringPassword++)
+   for (stringPassword = 0; stringPassword < arrayBadPassword.length, stringPassword++;)
    {
     if (stringPassword === arrayBadPasswords[0])
     {
        stringPassword = prompt("Cannot use that password!");
-    };
+    }
     else
     {
        stringPassword = prompt("Password is good!");
     }
-   };
+   }
 };
 
 window.onload = function () 
