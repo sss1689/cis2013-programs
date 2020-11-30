@@ -5,7 +5,7 @@ var $ = function (id)
 
 var passwordCheckOld = function () 
 {
-    var stringPassword, arrayBadPasswords, stringOutput;
+    var stringPassword, arrayBadPasswords, stringOutput, i;
     
     stringPassword = $("password").value;
     
@@ -13,21 +13,25 @@ var passwordCheckOld = function ()
     
     stringOutput = "";
  
-   if (stringPassword.length < 8) {
-    alert("Your password is too short!");
-   }
-   for (stringPassword = 0; stringPassword < arrayBadPassword.length, stringPassword++;)
+   if (stringPassword.length < 8)
    {
-    if (stringPassword === arrayBadPasswords[0])
-    {
-       stringPassword = prompt("Cannot use that password!");
-    }
-    else
-    {
-       stringPassword = prompt("Password is good!");
-    }
+    stringOutput = alert("Your password is too short!");
    }
-};
+   else
+   {
+      for (i = 0; i < arrayBadPassword.length, i++;)
+      {
+         if (stringPassword === arrayBadPasswords[1])
+         {
+            stringOutput = prompt("Cannot use bad passwords!");
+         }
+         else
+         {
+            stringOutput = prompt("Password is good!");
+         }
+      }
+      $("output").value = stringOutput;
+   }
 
 window.onload = function () 
 {
